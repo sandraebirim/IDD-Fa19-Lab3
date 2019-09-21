@@ -1,6 +1,6 @@
 # Data Logger (and using cool sensors!)
 
-*A lab report by John Q. Student.*
+*A lab report by Sandra Ebirim Student.*
 
 ## In The Report
 
@@ -11,12 +11,18 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 ## Part A.  Writing to the Serial Monitor
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
+
+The range of the analog values is from 0 to 1023 based on the serial monitor output. 
  
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?**
+
+It has 10 bits of resolution which can be found by reading the documentation. 
 
 ## Part B. RGB LED
 
 **How might you use this with only the parts in your kit? Show us your solution.**
+
+[RGB Video](https://www.youtube.com/watch?v=RtFBro4ZOV4&feature=youtu.be)
 
 ## Part C. Voltage Varying Sensors 
  
@@ -24,13 +30,27 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **a. What voltage values do you see from your force sensor?**
 
+There is a range of analog values between 0 and 1023 using the serial monitor. 
+
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
+
+It seems as if relationship between the voltage and the force applied is logarithmic. A small amount of force changes the amount of voltage significantly. However, as you apply more force, the resulting increase in voltage becomes less significant. 
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
+We can use analogRead from A0 to give us the voltage range of 0 to 1024 that is produced by the FSR. This output can be used as the brightness parameter in the analogWrite function so the brightness will vary as the voltage varies. We can then group the different LED colors based on the resistance value that is being read in. 
+
+
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
+Softpot - 10k resistor 
+Photocell - 5k resistor
+
+CHECK 
+
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
+
+When force was applied to the softpot resistor in different spots, the resistance changed. For the photocell resistor, there was increase in voltage when there was more light this means that the more light, the less resistance which is an inverse relationship. 
 
 ### 2. Accelerometer
  
@@ -45,6 +65,8 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 ## Optional. Graphic Display
 
 **Take a picture of your screen working insert it here!**
+[Working Graphic Display](https://www.youtube.com/watch?v=hw0PQMfqLUA&feature=youtu.be)
+[Working Graphic Display Code](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/OLED.ino) 
 
 ## Part D. Logging values to the EEPROM and reading them back
  
