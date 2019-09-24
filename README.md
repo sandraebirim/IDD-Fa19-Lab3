@@ -66,7 +66,6 @@ When force was applied to the softpot resistor in different spots, the resistanc
 
 **Take a picture of your screen working insert it here!**
 [Working Graphic Display](https://www.youtube.com/watch?v=hw0PQMfqLUA&feature=youtu.be)
-
 [Working Graphic Display Code](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/OLED.ino) 
 
 ## Part D. Logging values to the EEPROM and reading them back
@@ -75,15 +74,28 @@ When force was applied to the softpot resistor in different spots, the resistanc
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+Yes, it does matter. If you set the values and clear them before outputting them, you will never get an output value. Essentially, while the action assigned to a particular state doesn't matter, the order of the states does matter. 
+
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
+
+The code is in the setup function because it doesn't need to be called on a continuous loop. The code only needs to be deployed when the sensor changes. 
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
+1024 byte sized data samples can be stored on the Atmega328. 
+
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
+
+The map function has the capability to convert analog data to byte-sized data like how it is utilized in the SwitchState1 code. The analog data from both the Arduino analog pins and the I2C devices can be converted in this manner. 
 
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
+EEPROM.put() can be used to store data that's larger than a byte. 
+
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
+
+[Analog Value Printer](https://github.com/sandraebirim/IDD-Fa19-Lab3/tree/master)
+
 
 ### 2. Design your logger
  
