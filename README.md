@@ -66,6 +66,7 @@ When force was applied to the softpot resistor in different spots, the resistanc
 
 **Take a picture of your screen working insert it here!**
 [Working Graphic Display](https://www.youtube.com/watch?v=hw0PQMfqLUA&feature=youtu.be)
+
 [Working Graphic Display Code](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/OLED.ino) 
 
 ## Part D. Logging values to the EEPROM and reading them back
