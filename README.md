@@ -1,6 +1,6 @@
 # Data Logger (and using cool sensors!)
 
-*A lab report by Sandra Ebirim Student.*
+*A lab report by Sandra Ebirim.*
 
 ## In The Report
 
@@ -104,3 +104,7 @@ EEPROM.put() can be used to store data that's larger than a byte.
 ### 3. Create your data logger!
  
 **a. Record and upload a short demo video of your logger in action.**
+
+[Data Logger Code](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/DataLogger.ino)
+
+[Data Logger Video](https://www.youtube.com/watch?v=PzJTUqx8RjA&feature=youtu.be)
