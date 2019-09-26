@@ -38,7 +38,7 @@ It seems as if relationship between the voltage and the force applied is logarit
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
-We can use analogRead from A0 to give us the voltage range of 0 to 1024 that is produced by the FSR. This output can be used as the brightness parameter in the analogWrite function so the brightness will vary as the voltage varies. We can then group the different LED colors based on the resistance value that is being read in. 
+We can use analogRead from A0 to give us the voltage range of 0 to 1023 that is produced by the FSR. This output can be used as the brightness parameter in the analogWrite function so the brightness will vary as the voltage varies. We can then group the different LED colors based on the resistance value that is being read in. 
 
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
@@ -83,7 +83,7 @@ Yes, it does matter. If you set the values and clear them before outputting them
 
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
 
-The code is in the setup function because it doesn't need to be called on a continuous loop. The code only needs to be deployed when the sensor changes. 
+The code is in the setup function because it doesn't need to be called on a continuous loop. The code only needs to be deployed when the sensor causes a change in resistance.
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
@@ -106,7 +106,7 @@ EEPROM.put() can be used to store data that's larger than a byte.
  
 **a. Insert here a copy of your final state diagram.**
 
-[Logger State Diagram](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/logger.jpeg)
+Logger State Diagram ![Logger State Diagram](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/logger.jpeg)
 
 ### 3. Create your data logger!
  
