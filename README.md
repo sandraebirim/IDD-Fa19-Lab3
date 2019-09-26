@@ -47,7 +47,7 @@ Softpot - 10k resistor
 
 Photocell - 5k resistor
 
-CHECK 
+CHECK
 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
@@ -56,6 +56,7 @@ When force was applied to the softpot resistor in different spots, the resistanc
 ### 2. Accelerometer
  
 **a. Include your accelerometer read-out code in your write-up.**
+[Code](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/Accel.ino);
 
 ### 3. IR Proximity Sensor
 
@@ -103,6 +104,8 @@ EEPROM.put() can be used to store data that's larger than a byte.
 ### 2. Design your logger
  
 **a. Insert here a copy of your final state diagram.**
+
+[Logger State Diagram](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/logger.jpeg)
 
 ### 3. Create your data logger!
  
