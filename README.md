@@ -43,11 +43,11 @@ We can use analogRead from A0 to give us the voltage range of 0 to 1024 that is 
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
-Softpot - 10k resistor 
+Softpot - A 10k resistor provided a reasonable range of voltages. 
 
-Photocell - 5k resistor
+Photocell - A total of 5k resistance was reasonable and this was achieved by putting 5, 1k resistors in series. 
 
-CHECK
+
 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
@@ -57,7 +57,7 @@ When force was applied to the softpot resistor in different spots, the resistanc
  
 **a. Include your accelerometer read-out code in your write-up.**
 
-[Code](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/Accel.ino);
+[Code](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/Accel.ino)
 
 ### 3. IR Proximity Sensor
 
