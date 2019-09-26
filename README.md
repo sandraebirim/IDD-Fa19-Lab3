@@ -44,6 +44,7 @@ We can use analogRead from A0 to give us the voltage range of 0 to 1024 that is 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
 Softpot - 10k resistor 
+
 Photocell - 5k resistor
 
 CHECK 
