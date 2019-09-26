@@ -56,6 +56,7 @@ When force was applied to the softpot resistor in different spots, the resistanc
 ### 2. Accelerometer
  
 **a. Include your accelerometer read-out code in your write-up.**
+
 [Code](https://github.com/sandraebirim/IDD-Fa19-Lab3/blob/master/Accel.ino);
 
 ### 3. IR Proximity Sensor
